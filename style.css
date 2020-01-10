@@ -1,0 +1,21 @@
+* {
+    box-sizing: 
+    border-box;
+}
+.madlibResult {
+    width: 500px;
+    height: 350px;
+    border: solid black 2px;
+    border-radius: 25px;
+    background-color: red;
+}
+
+.p {
+    
+    font-color: teal;
+}
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightcyan;
+}
