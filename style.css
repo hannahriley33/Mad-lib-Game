@@ -1,21 +1,74 @@
 * {
     box-sizing: 
     border-box;
-}
-.madlibResult {
-    width: 500px;
-    height: 350px;
-    border: solid black 2px;
-    border-radius: 25px;
-    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
 }
 
-.p {
-    
-    font-color: teal;
+#title {
+    font-size: 45px;
+    font-style: unset;
+    margin: 30px auto;
+    font-weight: bold;
 }
+
+#junglePic {
+    border: solid black 3px;
+    width: 35%;
+    height: auto;
+
+}
+
+#madlib-result {
+    width: 500px;
+    height: auto;
+    border: solid black 4px;
+    border-radius: 25px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: lightcyan;
+    font-size: 20px;
+}
+
 body {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: paleturquoise;
+}
+
+#instructions {
+    border: solid black 3px;
+    text-align: center;
+    width: 75%;
+    margin: 50px auto;
     background-color: lightcyan;
+}
+
+#yourWords {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+input.placeholder {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: text; 
+}
+
+.inputBox {
+    border: solid black 1px;
+}
+#userInput {
+    border: solid black 3px;
+    display: inline-block;
+    padding: 0px 20px 20px 20px;
+    background-color: lightcyan;
+}
+#button {
+    margin: 20px;
+    font-size: 20px;
+    border: solid black 2px;
+    padding: 10px;
+    cursor: pointer;
 }
