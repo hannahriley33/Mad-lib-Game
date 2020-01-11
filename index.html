@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,167 +9,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     </head>
-    <script src="script.js"></script>
+
+<script src="script.js" type="module"></script>
+
 <body>
-    
     <header>
         <div id="title">Welcome to the Jungle</div>
         <img src="https://images.pexels.com/photos/904807/pexels-photo-904807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="junglePic"> 
-    </header>
-    
+    </header>    
 
-<div id="instructions">
-  <h2>Instructions</h2>
-  <p>Fill in the blanks with the indicated types of words and let the hilarity ensue!  Be creative with your words.  The <strong>bizzare</strong> and <strong>unordinary</strong> are <em>essential</em> to ensure you have a fun and successful story.</p>
-</div>
-<div id="userInput">
-    <p id="yourWords">Your Words:</p>
-    
-    <input type="text" placeholder="Adjective" class="placeholder"
-    id="adj1Input">
-    <label id="adj1"></label> 
-    
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Adjective" class="placeholder"
-        id="adj2Input">
-        <label id="adj2"></label> 
-        
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Adjective" class="placeholder"
-        id="adj3Input">
-        <label id="adj3"></label> 
-      
-    <br>
-    <br>
-    
-         <input type="text" placeholder="Noun" class="placeholder"
-         id="noun1Input">
-        <label id="noun1"></label> 
-      
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Adjective" class="placeholder"
-        id="adj4Input">
-         <label id="adj4"></label> 
-       
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Adjective" class="placeholder"
-        id="adj5Input">
-        <label id="adj5"></label> 
-       
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Noun" class="placeholder"
-        id="noun2Input">
-        <label id="noun2"></label> 
-     
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Verb" class="placeholder"
-        id="verb1Input">
-        <label id="verb1"></label> 
-     
-    <br>
-    <br>
-    
-         <input type="text" placeholder="Verb" class="placeholder">
-         <label id="verb2"></label> 
-    
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Adjective" class="placeholder"
-        id="adj6Input">
-         <label id="adj6"><label> 
-    
-    <br>
-    <br>
-   
-        <input type="text" placeholder="Noun" class="placeholder"
-        id="noun3Input">
-        <label id="noun3"></label> 
-     
-    <br>
-    <br>
-   
-         <input type="text" placeholder="Verb" class="placeholder"
-         id="verb3Input">
-         <label id="verb3"></label> 
-    
-    <br>
-    <br>
-        <input type="text" placeholder="Noun" class="placeholder" 
-        id="noun4Input">
-        <label id="noun4"></label> 
-    
-    <br>
-    <br>
-        <input type="text" placeholder="Verb" class="placeholder"
-        id="verb4Input">
-        <label id="verb4"></label> 
-    
-    <br>
-    <br>
-    
-        <input type="text" placeholder="Adjective" class="placeholder"
-        id="adj7Input">
-        <label id="adj7"></label> 
-     
-<!-- 
-adj 1
-adj2
-adj3
-noun1
-adj4
-adj5
-noun2
-verb1
-verb2
-adj6
-noun3
-verb3
-noun4
-verb4
-adj7 
--->
-</div>
-<br>
-<br>
-<button id="button">Submit!</button>
+    <div id="hide">
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p>Fill in the blanks with the indicated types of words and let the hilarity ensue!  Be creative with your words.  The <strong>bizzare</strong> and <strong>unordinary</strong> are <em>essential</em> to ensure you have a fun and successful story.</p>
+        </div>
 
-<!-- 
-adj 1
-adj2
-adj3
-noun1
-adj4
-adj5
-noun2
-verb1
-verb2
-adj6
-noun3
-verb3
-noun4
-verb4
-adj7 
--->
+        <fieldset id="userInput">
+            <p id="yourWords">Your Words:</p>
+            <input type="text" placeholder="Adjective" class="placeholder" id="adj1Input">
+            <input type="text" placeholder="Adjective" class="placeholder" id="adj2Input">
+            <input type="text" placeholder="Adjective" class="placeholder"id="adj3Input">
+            <input type="text" placeholder="Noun" class="placeholder"id="noun1Input">
+            <input type="text" placeholder="Adjective" class="placeholder" id="adj4Input">
+            <input type="text" placeholder="Adjective" class="placeholder" id="adj5Input">
+            <input type="text" placeholder="Noun" class="placeholder" id="noun2Input">
+            <input type="text" placeholder="Verb" class="placeholder" id="verb1Input">
+            <input type="text" placeholder="Verb" class="placeholder" id="verb2Input">
+            <input type="text" placeholder="Adjective" class="placeholder" id="adj6Input">
+            <input type="text" placeholder="Noun" class="placeholder" id="noun3Input">
+            <input type="text" placeholder="Verb" class="placeholder" id="verb3Input">
+            <input type="text" placeholder="Noun" class="placeholder"  id="noun4Input">
+            <input type="text" placeholder="Verb" class="placeholder" id="verb4Input">
+            <input type="text" placeholder="Adjective" class="placeholder" id="adj7Input">
+        </fieldset>
+        <button id="submit">Submit!</button>
+    </div>
 
-<div id="madlib-result">
-    <p>
-        As I walk through the jungle. I take out my <span id = "adj1Output"></span> canteen. There's a
-        <span id = "adj2Output"></span> parrot with a <span id = "adj3Output"></span><span id = "noun1Output"></span> in his beak right in front of me in the <span id = "adj4Output"></span> trees! I gaze at his <span id = "adj5Output"></span><span id = "noun2Output"></span>. A sudden sound jolts me from my gaze! A panther is <span id="verb1Output"></span> in front of my head! I <span id = "verb2Output"></span> his <span id = "adj6Output"></span>breath. I remember I have a packet of <span id = "noun3Output"></span>that makes panthers go into a deep slumber! I <span id="verb3Output"></span> it away in front of the <span id = "noun4Output"></span>.Yes he's eating it! I <span id="verb4Output"></span> away through the <span id = "adj7Output"></span> jungle. I meet my parents at the tent. Phew; It’s been an exciting day in the jungle. 
-    </p>
+    <div id="show">
+        <div id="madlibResult">
+            <p>
+                As I walk through the jungle. I take out my <span id="adj1Output"></span> canteen. There's a <span id="adj2Output"></span> parrot with a <span id="adj3Output"></span> <span id="noun1Output"></span> in his beak right in front of me in the <span id="adj4Output"></span> trees! I gaze at his <span id="adj5Output"></span> <span id="noun2Output"></span>. A sudden sound jolts me from my gaze! A panther is <span id="verb1Output"></span> in front of my head! I <span id="verb2Output"></span> his <span id="adj6Output"></span> breath. I remember I have a packet of <span id="noun3Output"></span> that makes panthers go into a deep slumber! I <span id="verb3Output"></span> it away in front of the <span id="noun4Output"></span>. Yes he's eating it! I <span id="verb4Output"></span> away through the <span id="adj7Output"></span> jungle. I meet my parents at the tent. Phew; It’s been an exciting day in the jungle. 
+            </p>
+        </div>
     
-</div>
-
+        <button id="tryAgain">Try Again?</button>
+    </div>
 </body>

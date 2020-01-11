@@ -19,7 +19,7 @@
 
 }
 
-#madlib-result {
+#madlibResult {
     width: 500px;
     height: auto;
     border: solid black 4px;
@@ -38,7 +38,8 @@ body {
 #instructions {
     border: solid black 3px;
     text-align: center;
-    width: 75%;
+    width: 50%;
+    padding: 0px 20px;
     margin: 50px auto;
     background-color: lightcyan;
 }
@@ -61,13 +62,14 @@ input.placeholder {
 .inputBox {
     border: solid black 1px;
 }
+
 #userInput {
     border: solid black 3px;
     display: inline-block;
     padding: 0px 20px 20px 20px;
     background-color: lightcyan;
 }
-#button {
+button {
     margin: 20px;
     font-size: 20px;
     border: solid black 2px;
@@ -75,4 +77,8 @@ input.placeholder {
     cursor: pointer;
     display: block;
     margin: 40px auto;
+}
+
+#show {
+    display: none;
 }
