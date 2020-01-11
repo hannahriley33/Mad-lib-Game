@@ -54,6 +54,8 @@ input.placeholder {
     font-weight: bold;
     letter-spacing: 1px;
     cursor: text; 
+    display: block;
+    margin: 10px auto;
 }
 
 .inputBox {
@@ -71,4 +73,6 @@ input.placeholder {
     border: solid black 2px;
     padding: 10px;
     cursor: pointer;
+    display: block;
+    margin: 40px auto;
 }
