@@ -33,7 +33,7 @@ const verb3Output = document.getElementById('verb3Output');
 const verb4Input = document.getElementById('verb4Input');
 const verb4Output = document.getElementById('verb4Output');
 
-function fillInBlanks() {
+function fillResult() {
     adj1Output.textContent = adj1Input.value;
     adj2Output.textContent = adj2Input.value;
     adj3Output.textContent = adj3Input.value;
@@ -49,7 +49,6 @@ function fillInBlanks() {
     verb2Output.textContent = verb2Input.value;
     verb3Output.textContent = verb3Input.value;
     verb4Output.textContent = verb4Input.value;
-    showResult();
 }
 
 function clearInputs() {
@@ -82,6 +81,9 @@ function retry () {
     showPart.style.display = 'none';
 }
 
-submit.addEventListener('click', fillInBlanks);
+submit.addEventListener('click', function() {
+    fillResult();
+    showResult();
+});
 
 tryAgain.addEventListener('click', retry);
